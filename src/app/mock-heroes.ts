@@ -6,6 +6,6 @@ export const HEROES: Hero[] = [
     { class: 'Druid: Fey', level: 5, name: 'Ida' },
     { class: 'Ranger: Beast Master', level: 6, name: 'Mel' },
     { class: 'Warlock: Tome', level: 5, name: 'Sizzle' },
-    { class: 'Monk', level: 5, name: 'Torin' },
+    { class: 'Monk: Open Palm', level: 5, name: 'Torin' },
     { class: 'Barbarian', level: 6, name: 'Vlad' }
 ];
