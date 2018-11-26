@@ -7,5 +7,5 @@ export const HEROES: Hero[] = [
     { class: 'Ranger: Beast Master', level: 6, name: 'Mel' },
     { class: 'Warlock: Tome', level: 5, name: 'Sizzle' },
     { class: 'Monk: Open Palm', level: 5, name: 'Torin' },
-    { class: 'Barbarian', level: 6, name: 'Vlad' }
+    { class: 'Barbarian: Ancestral Guardian', level: 6, name: 'Vlad' }
 ];
