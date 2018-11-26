@@ -1,5 +1,7 @@
 # Dnd
 
+The goal of this project is to provide a one stop shop for my players to get schedule updates and journal entries of past games. Currently a data base and middleware hasn't been created and styles have yet to be fully implemented.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 
 ## Development server
@@ -13,6 +15,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+Current build is for dnd.heatherflux.com to build for this app run
+`
+ng build --prod --base-href https://dnd.heatherflux.com/
+`
+This build is monitored on the website with a post-receive.git file so that when an update occurs I can push it up to the site easily by `git push live`. This is as opposed to tunneling in and copying everything myself.
 
 ## Running unit tests
 
