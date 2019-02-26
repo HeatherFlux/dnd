@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("/src/assets/images/wallpaper_2560\ x\ 1600\ wallpaper.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+}
