@@ -7,15 +7,37 @@
       <h4 class="color">{{ subTitle }}</h4>
       <p class="color">Also Mulmaster Fried Harpy and Spit Roasted Grick</p>
     </div>
-  </header><!-- End Navigation -->
 
-  <div class="container">
-    <div class="col-md-9">
-      <app-adventurers></app-adventurers>
-    </div>
-    <div class="col-md-3 color">
-      <h2>Schedule</h2>
-      <app-schedule></app-schedule>
+    <nav class="navbar fixed-top navbar-expand navbar-dark bg-transparent pull-right">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="combat">Combat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <app-adventurers></app-adventurers>
+      </div>
+      <div class="col-md-3 color">
+        <h2>Schedule</h2>
+        <p>Under Construction</p>
+        <app-schedule></app-schedule>
+      </div>
     </div>
   </div>
 </div>

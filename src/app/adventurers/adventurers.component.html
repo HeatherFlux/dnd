@@ -1,7 +1,7 @@
 <h2 class="color" style="text-transform: capitalize">The Balladry</h2>
-<ul class="heroes">
+<ul>
   <li class="color" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-    <span type="button" class="btn btn-light">{{hero.level}} {{hero.name}}</span>
+<span class="badge badge-secondary">{{hero.level}}</span><span> {{hero.name}}</span>
   </li>
 </ul>
 

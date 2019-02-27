@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The Dank Beaver';
+  title = 'Dank Beaver';
   subTitle = 'Home of Faerun\'s famous adventurers The Fanny Pack';
 }
