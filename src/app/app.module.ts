@@ -11,6 +11,7 @@ import { CombatComponent } from './combat/combat.component';
 import { MainComponent } from './main/main.component';
 import { DiceComponent } from './combat/dice/dice.component';
 import { DiceRollerComponent } from './combat/dice/dice-roller/dice-roller.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DiceRollerComponent } from './combat/dice/dice-roller/dice-roller.compo
     CombatComponent,
     MainComponent,
     DiceComponent,
-    DiceRollerComponent
+    DiceRollerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
