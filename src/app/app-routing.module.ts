@@ -3,11 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CombatComponent } from './combat/combat.component';
 import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: MainComponent },
-  { path: 'combat', component: CombatComponent }
-  // { path: 'about', component: AboutComponent }
+  { path: 'combat', component: CombatComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
