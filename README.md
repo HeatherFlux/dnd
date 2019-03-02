@@ -18,7 +18,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Current build is for dnd.heatherflux.com to build for this app run
 `
-ng build --prod --base-href https://dnd.heatherflux.com/
+ng build --prod --base-href https://dnd.heatherflux.com
 `
 This build is monitored on the website with a post-receive.git file so that when an update occurs I can push it up to the site easily by `git push live`. This is as opposed to tunneling in and copying everything myself.
 
