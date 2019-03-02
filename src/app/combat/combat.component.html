@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <table class="table table-striped table-hover table-dark color">
+    <thead>
+      <tr>
+        <th scope="col"><i class="fas fa-caret-right"></i></th>
+        <th scope="col">Name</th>
+        <th scope="col">AC</th>
+        <th scope="col">HP</th>
+        <th scope="col">To Hit</th>
+        <th scope="col">Damage Dice</th>
+        <th scope="col">Spells</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let creature of creatures">
+        <th scope="row"><i class="fas fa-caret-right"></i></th>
+        <td>{{creature.name}}</td>
+        <td>{{creature.ac}}</td>
+        <td>{{creature.hp}}</td>
+        <td>{{creature.toHit}}</td>
+        <td>{{creature.damage[0].numberOfDice}}d{{creature.damage[0].valueOfDice}}+{{creature.damage[0].modifier}}</td>
+        <td>{{creature.spells[0].spellName}}</td>
+        <td>{{creature.notes}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="color"> 
+    combat works!
+  </p>
+</div>
