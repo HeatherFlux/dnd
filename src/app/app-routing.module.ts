@@ -5,7 +5,7 @@ import { CombatComponent } from './combat/combat.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', pathMatch: 'full', component: MainComponent },
   { path: 'combat', component: CombatComponent }
   // { path: 'about', component: AboutComponent }
 ];
