@@ -8,7 +8,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CombatComponent } from './combat/combat.component';
-import { MainComponent } from './main/main.component'; // <-- NgModel lives here
+import { MainComponent } from './main/main.component';
+import { DiceComponent } from './combat/dice/dice.component';
+import { DiceRollerComponent } from './combat/dice/dice-roller/dice-roller.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MainComponent } from './main/main.component'; // <-- NgModel lives here
     HeroDetailComponent,
     ScheduleComponent,
     CombatComponent,
-    MainComponent
+    MainComponent,
+    DiceComponent,
+    DiceRollerComponent
   ],
   imports: [
     BrowserModule,

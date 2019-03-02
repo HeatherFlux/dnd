@@ -3,14 +3,15 @@ export class Creature {
   ac: number;
   hp: number;
   toHit: number;
-  damage: [{
-    numberOfDice: number;
-    valueOfDice: number;
-    modifier: number;
-  }];
-  spells: [{
-    spellName: string,
-    spellDescription: string
-  }];
+  damage: Damage[];
+  spells: Spells[];
   notes: string;
+}
+
+export class Damage {
+  constructor(numberOfDice: number, valueOfDice: number, modifier: number) { }
+}
+
+export class Spells {
+  constructor(spellName: string, spellDescription: string) { }
 }

@@ -19,13 +19,16 @@
         <td>{{creature.ac}}</td>
         <td>{{creature.hp}}</td>
         <td>{{creature.toHit}}</td>
-        <td>{{creature.damage[0].numberOfDice}}d{{creature.damage[0].valueOfDice}}+{{creature.damage[0].modifier}}</td>
+        <td><app-dice [dice]="creature.damage"></app-dice></td>
         <td>{{creature.spells[0].spellName}}</td>
         <td>{{creature.notes}}</td>
       </tr>
     </tbody>
   </table>
+  <p class="color">
+    TODO: Add a Button for adding creatures.
+  </p>
   <p class="color"> 
-    combat works!
+    TODO: On Select Creature Detail
   </p>
 </div>

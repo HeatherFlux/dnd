@@ -7,14 +7,25 @@ export const CREATURES: Creature[] = [
         hp: 37,
         toHit: 6,
         damage: [{
-            numberOfDice: 2,
+            numberOfDice: 1,
             valueOfDice: 8,
             modifier: 6
-        }],
+        },
+        {
+            numberOfDice: 1,
+            valueOfDice: 4,
+            modifier: 0
+        }
+    ],
         spells: [{
             spellName: 'Fireball',
             spellDescription: 'Where\'d it get that'
-        }],
+        },
+        {
+            spellName: 'Lightning Bolt',
+            spellDescription: 'Its a bolt of Lightning'
+        }
+    ],
         notes: 'It\'s a bug no its a BugBear'
     },
     {
@@ -39,9 +50,9 @@ export const CREATURES: Creature[] = [
         hp: 57,
         toHit: 6,
         damage: [{
-            numberOfDice: 2,
+            numberOfDice: 1,
             valueOfDice: 8,
-            modifier: 6
+            modifier: 3
         }],
         spells: [{
             spellName: 'Howl',
