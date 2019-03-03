@@ -6,9 +6,7 @@ import { MainComponent } from './main/main.component';
 import { AboutComponent} from './about/about.component';
 
 const routes: Routes = [
-  { path: 'home', component: MainComponent },
-  { path: '', redirectTo: 'home'},
-  { path: '/', redirectTo: 'home' },
+  { path: '', component: MainComponent },
   { path: 'combat', component: CombatComponent },
   { path: 'about', component: AboutComponent }
 ];
