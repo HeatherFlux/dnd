@@ -1,0 +1,11 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+.color {
+  text-align: center;
+  color: rgba(150, 150, 150, 100);
+  text-shadow: .1em .1em .2em #000000;
+}
+
+.vibur {
+  font: 100 5vh "Vibur";
+}

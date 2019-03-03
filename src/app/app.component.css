@@ -2,7 +2,7 @@
 
 .color {
   color: rgba(150, 150, 60, 100);
-  text-shadow: 1px 1px 8px #000000;
+  text-shadow: .1em .1em .2em #000000;
 }
 
 .vibur {
@@ -13,7 +13,7 @@
   font: 8vh "Vibur";
   text-transform: Capitalize;
   color: rgba(150, 150, 60, 100);
-  text-shadow: 1px 1px 8px #000000;
+  text-shadow: .1em .1em .2em #000000;
 }
 
 #neon {
