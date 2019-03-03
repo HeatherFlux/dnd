@@ -1,8 +1,8 @@
 <h2 class="color" style="text-transform: capitalize">The Balladry</h2>
 <ul>
-  <li class="color" *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-<span class="badge badge-secondary">{{hero.level}}</span><span> {{hero.name}}</span>
+<li class="color" *ngFor="let adventurer of adventurers" [class.selected]="adventurer === selectedAdventurer" (click)="onSelect(adventurer)">
+<span class="badge badge-secondary">{{adventurer.level}}</span><span> {{adventurer.name}}</span>
   </li>
 </ul>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<app-adventurer-detail [adventurer]="selectedAdventurer"></app-adventurer-detail>

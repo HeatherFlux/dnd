@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
+import { Adventurer } from '../adventurers/adventurer';
+import { AdventurerService } from '../services/adventurer-service/adventurer.service';
 
 @Component({
   selector: 'app-schedule',
@@ -8,17 +8,17 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
-  heroes: Hero[];
+  adventurers: Adventurer[];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private adventurerService: AdventurerService) { }
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-    .subscribe(heroes => this.heroes = this.heroes);
+  getAdventurers(): void {
+    this.adventurerService.getAdventurers()
+    .subscribe(adventurers => this.adventurers = this.adventurers);
   }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getAdventurers();
   }
 
 }

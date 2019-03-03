@@ -1,6 +1,6 @@
-import { Hero } from './hero';
+import { Adventurer } from './adventurer';
 
-export const HEROES: Hero[] = [
+export const ADVENTURERS: Adventurer[] = [
     { class: 'Warlock: Blade', level: 7, name: 'Daniel' },
     { class: 'Wizard: Divination', level: 7, name: 'Ena' },
     { class: 'Druid: Fey', level: 7, name: 'Ida' },

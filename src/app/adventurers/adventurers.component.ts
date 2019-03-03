@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
+import { Adventurer } from '../adventurers/adventurer';
+import { AdventurerService } from '../services/adventurer-service/adventurer.service';
 
 @Component({
   selector: 'app-adventurers',
@@ -8,22 +8,22 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./adventurers.component.css']
 })
 export class AdventurersComponent implements OnInit {
-  heroes: Hero[];
-  selectedHero: Hero;
+  adventurers: Adventurer[];
+  selectedAdventurer: Adventurer;
 
-  constructor(private heroService: HeroService) { }
+  constructor(private adventurerService: AdventurerService) { }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
+  onSelect(adventurer: Adventurer): void {
+    this.selectedAdventurer = adventurer;
   }
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes);
+  getAdventurers(): void {
+    this.adventurerService.getAdventurers()
+      .subscribe(adventurers => this.adventurers = adventurers);
   }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getAdventurers();
   }
 
 }

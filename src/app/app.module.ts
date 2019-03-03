@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AdventurersComponent } from './adventurers/adventurers.component';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { AdventurerDetailComponent } from './adventurers/adventurer-detail/adventurer-detail.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CombatComponent } from './combat/combat.component';
@@ -17,7 +17,7 @@ import { AboutComponent } from './about/about.component';
   declarations: [
     AppComponent,
     AdventurersComponent,
-    HeroDetailComponent,
+    AdventurerDetailComponent,
     ScheduleComponent,
     CombatComponent,
     MainComponent,
