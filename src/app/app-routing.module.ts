@@ -8,7 +8,9 @@ import { AboutComponent} from './about/about.component';
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'combat', component: CombatComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule'},
+  { path: '**', redirectTo: 'not-found' }
 ];
 
 @NgModule({

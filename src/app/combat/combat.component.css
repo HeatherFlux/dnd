@@ -1,8 +1,4 @@
 .color {
   color: rgba(150, 150, 60, 100);
-  text-shadow: 1px 1px 8px #000000;
-}
-.drip {
-  color: #EEE;
-  text-shadow: 4px 4px 1px #300000;
+  text-shadow: 1px 1px 7px #000000;
 }
