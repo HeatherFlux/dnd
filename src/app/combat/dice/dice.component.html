@@ -1,3 +1,5 @@
-<p>
-<li *ngFor="let die of dice"> <app-dice-roller [die]="die"></app-dice-roller> </li>
-</p>
+<ul class="list-group">
+  <li style="background-color:inherit" *ngFor="let die of dice">
+    <app-dice-roller [die]="die"></app-dice-roller>
+  </li>
+</ul>

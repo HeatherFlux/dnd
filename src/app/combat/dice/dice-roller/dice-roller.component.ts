@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DiceRollerComponent implements OnInit {
   @Input() die: any;
   damageTotal: string;
+  damageAverage: any;
 
   constructor() { }
 
@@ -17,7 +18,8 @@ export class DiceRollerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.damageTotal = '';
+    this.damageTotal = '0';
+    this.damageAverage = Math.floor(((this.die.numberOfDice * this.die.valueOfDice) + this.die.numberOfDice) / 2) + this.die.modifier;
   }
 
 }

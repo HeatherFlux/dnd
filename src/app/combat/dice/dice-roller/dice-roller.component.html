@@ -1,2 +1,3 @@
-<span>{{die.numberOfDice}}d{{die.valueOfDice}}+{{die.modifier}}
-  <button (click)="rollDice(die)">{{damageTotal}}</button></span>
+<span>
+  <p (click)="rollDice(die)">{{die.numberOfDice}}d{{die.valueOfDice}}+{{die.modifier}} = {{damageTotal}} ({{damageAverage}})</p>
+</span>
